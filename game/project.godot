@@ -1,0 +1,46 @@
+config_version=5
+
+[application]
+
+config/name="NEON VEIL"
+config/description="霓虹帷幕 — LLM 驱动的赛博朋克黑客 RPG"
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/size/window_width_override=1440
+window/size/window_height_override=810
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.0117647, 0.0156863, 0.0235294, 1)
+
+[audio]
+
+driver/enable_input=false
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=false
+
+[gui]
+
+theme/default_font_multichannel_signed_distance_field=true
+
+[autoload]
+
+UI="*res://scripts/autoload/UI.gd"
+Sfx="*res://scripts/autoload/Sfx.gd"
+GS="*res://scripts/autoload/GameState.gd"
+FX="*res://scripts/autoload/FX.gd"
+Bridge="*res://scripts/autoload/Bridge.gd"
+
+
+

@@ -1,0 +1,21 @@
+# local state
+.bridge.pid
+game/.godot/
+bridge/sessions/
+bridge/logs/*.log
+bridge/logs/*.jsonl
+*.tmp
+__pycache__/
+tools/game.pid
+tools/live-save-backup.json
+
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+auth.json
+*.pem
+*.key
+node_modules/
+*.pid
